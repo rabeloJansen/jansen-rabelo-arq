@@ -5,7 +5,8 @@
     --text-white: #ffffff;
     --text-gray: #404040;
     --text-lightgray: #aaaaaa;
-    --text-theme: #00ffff;
+    --text-theme-light: #00ffff;
+    --text-theme-dark: #1c3766;
     --text-link: #da0101;
     --text-shadow: #4040407a;
     --background-white: #ffffff;
@@ -114,7 +115,7 @@ nav ul li a {
 }
 
 ul.menu:hover li a{
-    color: var(--text-theme);
+    color: var(--text-theme-light);
 }
 
 ul.menu:hover li a:not(:hover) {
@@ -198,15 +199,28 @@ main {
     color: var(--text-white);
     max-width: 800px; /* Define uma largura máxima para o texto */
     text-align: center;
-    text-shadow: 2px 2px 4px var(--text-gray);
+    text-shadow: 2px 2px 4px var(--background-shadow);
     margin: 0 auto;
 }
 
 .highlight {
     font-size: 2.2em;
     font-weight: bold;
-    color: var(--text-theme);
+    color: var(--text-theme-light);
     text-shadow: 2px 2px 4px var(--background-shadow);
+}
+
+.highlight-dark {
+    font-size: 2.0em;
+    font-weight: bold;
+    color: var(--text-theme-dark);
+    text-shadow: 2px 2px 4px var(--background-shadow);
+}
+
+.highlight-gray {
+    font-size: 1.6em;
+    font-weight: bold;
+    color: var(--text-gray);
 }
 
 .subject-layout {
@@ -281,7 +295,7 @@ main {
     }
 
 .professional-button {
-    background-color: var(--text-theme);
+    background-color: var(--text-theme-light);
     box-shadow: 2px 4px 8px var(--background-shadow);
     width: 180px;
     height: 50px;
