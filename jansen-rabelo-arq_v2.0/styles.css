@@ -218,8 +218,15 @@ main {
     gap: 40px;
 }
 
-.photo {
+.picture1 {
     background: url('package/images/thematic1.png') no-repeat center center;
+    width: 35vw;
+    height: 35vw;
+    background-size: cover;
+}
+
+.picture2 {
+    background: url('package/images/thematic2.png') no-repeat center center;
     width: 35vw;
     height: 35vw;
     background-size: cover;
