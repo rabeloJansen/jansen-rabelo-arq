@@ -13,28 +13,40 @@ document.addEventListener('DOMContentLoaded', function () {
     // Vai para a segunda página
     if (nextBtn1) {
         nextBtn1.addEventListener('click', function () {
-            document.getElementById('second-page').scrollIntoView({ behavior: 'smooth' });
+            const section = document.getElementById('second-page');
+            if (section) {
+                window.scrollTo({ left: section.offsetLeft, behavior: 'smooth' });
+            }
         });
     }
     
     // Volta para a primeira página
     if (prevBtn2) {
         prevBtn2.addEventListener('click', function () {
-            document.getElementById('first-page').scrollIntoView({ behavior: 'smooth' });
+            const section = document.getElementById('first-page');
+            if (section) {
+                window.scrollTo({ left: section.offsetLeft, behavior: 'smooth' });
+            }
         });
     }
 
     // Vai para a terceira página
     if (nextBtn2) {
         nextBtn2.addEventListener('click', function () {
-            document.getElementById('third-page').scrollIntoView({ behavior: 'smooth' });
+            const section = document.getElementById('third-page');
+            if (section) {
+                window.scrollTo({ left: section.offsetLeft, behavior: 'smooth' });
+            }
         });
     }
 
     // Volta para a segunda página
     if (prevBtn3) {
         prevBtn3.addEventListener('click', function () {
-            document.getElementById('second-page').scrollIntoView({ behavior: 'smooth' });
+            const section = document.getElementById('second-page');
+            if (section) {
+                window.scrollTo({ left: section.offsetLeft, behavior: 'smooth' });
+            }
         });
     }
 
