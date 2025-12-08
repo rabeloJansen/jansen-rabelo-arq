@@ -214,7 +214,6 @@ main {
     font-size: 2.0em;
     font-weight: bold;
     color: var(--text-theme-dark);
-    text-shadow: 2px 2px 4px var(--background-shadow);
 }
 
 .highlight-gray {
@@ -320,4 +319,10 @@ footer {
     position: absolute; /* Posiciona o footer dentro da primeira página */
     width: calc(100%); /* Ajusta a largura do footer */
     bottom: 0;
+}
+
+/* Hide mobile-only controls on desktop; re-enabled by styles.mobile.css for small screens */
+.mobile-hamburger,
+.mobile-section-name {
+    display: none;
 }
